@@ -101,37 +101,30 @@ nav ul{
     width: 300px;
     height: 600px;
     border-radius: 12px;
-    background: var(--i);
-    background-size: cover;
     -webkit-box-shadow: 0px 0px 15px 5px #000000; 
     box-shadow: 0px 0px 15px 5px #000000;
+    position: relative;
+    overflow: hidden;
 
 }
-.contenido{
+.card img{
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: var(--u) ;
-    background-size: cover;
-    background-position-x: 350px;
-    border-radius: 12px;
+}
+.top_Vid{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 600px;
+    width: 300px;
     opacity: 0;
     transition: .5s;
 }
-.contenido h2, a{
-    font-family:nave;
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
-}
-.card:hover .contenido{
+.top_Vid:hover{
     opacity: 1;
 }
-.contenido:hover{
-
+.card:hover{
     -webkit-box-shadow: 0px 0px 15px 5px #0095eb; 
     box-shadow: 0px 0px 25px 15px #0d86c2;
 }
+
